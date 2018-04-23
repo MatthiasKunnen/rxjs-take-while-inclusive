@@ -2,12 +2,16 @@
     "compileOnSave": false,
     "compilerOptions": {
         "baseUrl": "./",
-        "module": "commonjs",
+        "module": "es6",
         "moduleResolution": "node",
         "outDir": "./dist",
         "sourceMap": true,
         "strictNullChecks": true,
-        "target": "es5"
+        "target": "es5",
+        "lib": [
+            "es5",
+            "es2015.promise"
+        ]
     },
     "include": [
         "src/**/*"
