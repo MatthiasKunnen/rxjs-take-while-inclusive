@@ -7,8 +7,6 @@ select version_type in "patch" "minor" "major"; do
         continue
     fi
 
-    read -p "Creating commit and tag for a $version_type release. Press [Enter].";
-
     # Use npm to increment the version and capture it
     version=`npm version ${version_type} --git-tag-version=false` || exit "$?"
 
@@ -31,6 +29,8 @@ select version_type in "patch" "minor" "major"; do
     echo "Changelog:"
     echo -e "$changelog"
     read -p "Examine changelog. [Enter] to continue"
+
+    read -p "Creating commit and tag for a $version_type release ($version). Press [Enter].";
 
     git add package.json package-lock.json || exit "$?"
     git commit -m "$message" || exit "$?"
