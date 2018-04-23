@@ -50,6 +50,7 @@ select version_type in "patch" "minor" "major"; do
 
     git tag "${version}" "${tag_args[@]}" || exit "$?"
 
+    rm -Rf dist
     echo "Building"
     npm run build || exit "$?"
     cp ./package.json ./.npmignore ./dist || exit "$?"
