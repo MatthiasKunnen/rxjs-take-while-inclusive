@@ -1,0 +1,21 @@
+{
+    "name": "rxjs-take-while-inclusive",
+    "description": "An operator equal to the takeWhile operator but also emits the last value.",
+    "author": {
+        "email": "matthias.kunnen@gmail.com",
+        "name": "Matthias Kunnen"
+    },
+    "keywords": [
+        "RxJS",
+        "Take While",
+        "Take While Inclusive"
+    ],
+    "dependencies": {
+        "rxjs": "^5.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MatthiasKunnen/rxjs-take-while-inclusive"
+    },
+    "version": "0.1.0"
+}
