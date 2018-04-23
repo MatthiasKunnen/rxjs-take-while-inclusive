@@ -37,3 +37,4 @@ yarn-error.log
 
 # System Files
 Thumbs.db
+.fuse_hidden*

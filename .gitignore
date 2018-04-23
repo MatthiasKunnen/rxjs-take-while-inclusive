@@ -39,5 +39,6 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+.fuse_hidden*
 
 **/*.min.*
