@@ -5,6 +5,7 @@
         "email": "matthias.kunnen@gmail.com",
         "name": "Matthias Kunnen"
     },
+    "license": "MIT",
     "keywords": [
         "RxJS",
         "Take While",
