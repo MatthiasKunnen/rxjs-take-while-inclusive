@@ -5,6 +5,8 @@
         "email": "matthias.kunnen@gmail.com",
         "name": "Matthias Kunnen"
     },
+    "main": "dist/take-while-inclusive.js",
+    "types": "dist/take-while-inclusive.ts",
     "license": "MIT",
     "keywords": [
         "RxJS",
