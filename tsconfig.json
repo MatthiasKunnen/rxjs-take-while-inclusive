@@ -2,6 +2,7 @@
     "compileOnSave": false,
     "compilerOptions": {
         "baseUrl": "./",
+        "declaration": true,
         "module": "es6",
         "moduleResolution": "node",
         "outDir": "./dist",

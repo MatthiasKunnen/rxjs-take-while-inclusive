@@ -4,7 +4,7 @@ import { Operator } from 'rxjs/Operator';
 import { Subscriber } from 'rxjs/Subscriber';
 import { TeardownLogic } from 'rxjs/Subscription';
 
-type predicateType<T> = (value: T, index: number) => boolean;
+export type predicateType<T> = (value: T, index: number) => boolean;
 
 class TakeWhileInclusiveSubscriber<T> extends Subscriber<T> {
     private index = 0;
