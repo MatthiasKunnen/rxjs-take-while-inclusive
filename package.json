@@ -7,7 +7,7 @@
         "name": "Matthias Kunnen"
     },
     "main": "take-while-inclusive.js",
-    "types": "take-while-inclusive.ts",
+    "types": "take-while-inclusive.d.ts",
     "license": "MIT",
     "keywords": [
         "RxJS",
