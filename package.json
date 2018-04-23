@@ -10,6 +10,10 @@
         "Take While",
         "Take While Inclusive"
     ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "prepublishOnly": "npm run build"
+    },
     "dependencies": {
         "rxjs": "^5.0.0"
     },
