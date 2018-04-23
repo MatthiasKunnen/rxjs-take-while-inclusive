@@ -2,8 +2,15 @@
 A takeWhile variant which also emits the value not satisfying the predicate
 before completing.
 
+Example usage
 ```TypeScript
-takeWhileInclusive(predicate)
+import { takeWhileInclusive } from 'rxjs-take-while-inclusive';
+import { interval } from 'rxjs/observable/interval';
+
+ interval(1000).pipe(
+    takeWhileInclusive(v => v < 5),
+).subscribe(console.log);
+// Prints: 0, 1, 2, 3, 4, 5
 ```
 
 Emits values emitted by the source Observable so long as each value satisfies
