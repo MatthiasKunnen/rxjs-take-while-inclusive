@@ -6,8 +6,8 @@
         "email": "matthias.kunnen@gmail.com",
         "name": "Matthias Kunnen"
     },
-    "main": "dist/take-while-inclusive.js",
-    "types": "dist/take-while-inclusive.ts",
+    "main": "take-while-inclusive.js",
+    "types": "take-while-inclusive.ts",
     "license": "MIT",
     "keywords": [
         "RxJS",
@@ -15,8 +15,7 @@
         "Take While Inclusive"
     ],
     "scripts": {
-        "build": "tsc -p tsconfig.json",
-        "prepublishOnly": "npm run build"
+        "build": "tsc -p tsconfig.json"
     },
     "dependencies": {
         "rxjs": "^5.0.0"
