@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/rxjs-take-while-inclusive.svg?style=for-the-badge)](https://www.npmjs.com/package/rxjs-take-while-inclusive)
+
 # TakeWhileInclusive
 A takeWhile variant which also emits the value not satisfying the predicate
 before completing.
