@@ -24,3 +24,11 @@ satisfied by the source values. The output Observable emits the source values
 until such time as the `predicate` returns false, at which point
 `takeWhileInclusive` stops mirroring the source Observable and completes the
 output Observable.
+
+## Node
+This module supports CommonJS, esm5 and esm2015. To use in node see the
+following import.
+
+```javascript
+var takeWhileInclusive = require('rxjs-take-while-inclusive').takeWhileInclusive;
+```
