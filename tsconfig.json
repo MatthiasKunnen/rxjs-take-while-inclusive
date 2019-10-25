@@ -5,7 +5,7 @@
         "declaration": true,
         "module": "es6",
         "moduleResolution": "node",
-        "outDir": "./dist",
+        "outDir": "./lib",
         "sourceMap": true,
         "strictNullChecks": true,
         "target": "es5",

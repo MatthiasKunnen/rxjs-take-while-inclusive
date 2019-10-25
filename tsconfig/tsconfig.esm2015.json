@@ -5,6 +5,6 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "target": "es2015",
-    "outDir": "../dist"
+    "outDir": "../lib"
   }
 }
