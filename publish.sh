@@ -28,7 +28,10 @@ select version_type in "patch" "minor" "major"; do
     echo ""
     echo "Changelog:"
     echo -e "$changelog"
-    read -p "Examine changelog. [Enter] to continue"
+    echo "${changelog}" > CHANGELOG_MSG
+    read -p "Examine changelog, edit CHANGELOG_MSG if desired. [Enter] to continue"
+    changelog="$(<CHANGELOG_MSG)"
+    rm -f CHANGELOG_MSG
 
     read -p "Creating commit and tag for a $version_type release ($version). Press [Enter].";
 
