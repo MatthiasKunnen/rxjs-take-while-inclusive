@@ -37,7 +37,6 @@ select version_type in "patch" "minor" "major"; do
 
     tag_args=(
         -a
-        -m "Released $version"
         -m "$changelog"
     )
 
