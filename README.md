@@ -30,5 +30,5 @@ This module supports CommonJS, esm5 and esm2015. To use in node see the
 following import.
 
 ```javascript
-var takeWhileInclusive = require('rxjs-take-while-inclusive').takeWhileInclusive;
+const {takeWhileInclusive} = require('rxjs-take-while-inclusive');
 ```
