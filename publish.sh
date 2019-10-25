@@ -11,14 +11,14 @@ select version_type in "patch" "minor" "major"; do
     version=`npm version ${version_type} --git-tag-version=false` || exit "$?"
 
     # Get last tag
-    last_tag=`git describe --abbrev=0 2>/dev/null`..HEAD
+    last_tag=`git describe --abbrev=0 2>/dev/null`
 
     if [ "$?" -ne  "0" ]; then
         echo "There is no previous tag, assuming first publication"
         last_tag=`git rev-list --max-parents=0 HEAD` || exit "$?"
     fi
 
-    changelog=`git log --format="- %s%+b" ${last_tag}`
+    changelog=`git log --format="- %s%+b" ${last_tag}..HEAD`
     message="Bumped package version to $version"
 
     echo "Message:"
