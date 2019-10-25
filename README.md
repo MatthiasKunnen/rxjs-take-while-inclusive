@@ -1,5 +1,10 @@
 [![npm version](https://img.shields.io/npm/v/rxjs-take-while-inclusive.svg?style=for-the-badge)](https://www.npmjs.com/package/rxjs-take-while-inclusive)
 
+__Note: This package is no longer needed as of
+[rxjs@6.4.0](https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md#640-2019-01-30) as the
+operator now takes an extra parameter which when true will also emit the last value.
+See [rxjs#4115](https://github.com/ReactiveX/rxjs/pull/4115).__
+
 # TakeWhileInclusive
 A takeWhile variant which also emits the value not satisfying the predicate
 before completing.
